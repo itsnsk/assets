@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Sign Up</title>
+  <style>
+    
+    :root {
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Montserrat", sans-serif;
+  --nav-font: "Lato", sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: var(--default-font);
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 400px;
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+background: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: var(--default-font);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-family:var(--default-font);
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: var(--heading-font);
+  background-color: #fff;
+  color: #222;
+  outline: none;
+
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  border: 1px solid #4CAF50;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+position: relative;
+top: 10px;
+  background-color:  #e84545;
+  color: white;
+  font-size: 16px;
+  font-family: var(--default-font);
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #3399ff;
+}
+.header{
+  background-color: #fff;
+}
+
+.header .logo img {
+  max-height: 100px;
+  margin-right: 10px;
+  opacity: 10.0;
+
+}
+.header .logo h1 {
+    position: relative;
+    bottom: 100px;
+    left: -150px;
+    color:#081b29 ;
+    font-family: var(--heading-font);
+}
+
+</style>
+</head>
+<header id="header" class="header fixed-top d-flex align-items-center">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+
+   <a class="logo d-flex align-items-center me-auto me-xl-0">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <img src="./assets/img/logo.jpg.png" alt="" data-aos="fade-in">
+      <h1>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY, RAICHUR</h1>
+    
+    </a>
+</div>
+</header><!-- End Header -->
+
+<body>
+  <div class="container">
+    
+    <h1>Student Sign Up</h1>
+    <style>
+      body {
+  background:#081b29;
+  background-size: cover;
+  background-position: center;
+}
+
+    </style>
+    <form action="/signup" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="roll_number">Roll Number:</label>
+      <input type="text" id="roll_number" name="roll_number" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm_password">Confirm Password:</label>
+      <input type="password" id="confirm_password" name="confirm_password" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
